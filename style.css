@@ -1,0 +1,421 @@
+:root {
+    --midnatsort: #260401; 
+    --gipshvid: #ffffff;
+    --modegrå: #d9d8d7;
+    --naturgrøn: #6a7326;
+    --havetsblå: #4a7074;
+    --solopgangsrød: #a63f03;
+    --forårsrosa: #d9bfc4;
+}
+
+body {
+    Margin: 0;
+    padding: 0;
+    min-width: 100%;
+    font-family: "adorn-slab-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -1px;
+    color: var(--midnatsort);
+    background-color: var(--gipshvid);
+}
+
+
+h1 {
+
+}
+
+h2 {
+    text-align: center;
+    margin-top: -20px;
+}
+
+p {
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--midnatsort);
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    z-index: 4;
+    background-color: var(--gipshvid);
+}
+
+
+#nav-bar {
+    width: 40px;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
+
+#logo-header {
+    margin-top: 12px;
+    width: 200px;
+    
+}
+
+#kurv-ikon {
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+#dropdown-burgerbar {
+    background-color: var(--gipshvid);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    padding-top: 60px;
+    z-index: -1;
+    display: none;
+}
+
+#kurv {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    padding-top: 5px;
+    z-index: 3;
+    display: none;
+}
+
+#nummer-menu-on {
+    color: var(--midnatsort);
+    text-decoration: underline;
+}
+
+.nummer-menu-off {
+    color: var(--forårsrosa);
+}
+
+
+#dropdown-burgerbar li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+#kurv li {
+    list-style: none;
+    display: inline-table;
+    margin: 0 30px 0 30px;
+    font-size: 35px;
+}
+
+#nummer-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/*Indkøbskurv aside*/
+
+aside {
+    background-color: #4a7074;
+}
+
+.vare {
+    border: solid 2px #260401;
+    padding: 5px;
+}
+
+.varebillede {
+    width: 100px;
+}
+
+#levering {
+    display: none;
+}
+
+#betaling {
+    display: none;
+}
+
+#gennemført {
+    display: none;
+}
+
+#gratis-levering {
+    text-align: center;
+    margin-top: -45px;
+    font-size: 12px;
+}
+
+/*FOOTER*/
+
+footer {
+    position: fixed;
+    background-color: var(--midnatsort);
+    text-align: center;
+    padding: 20px 0px;
+    z-index: 2;
+    width: 100%;
+}
+
+footer p {
+    color: var(--gipshvid);
+    margin: -8px 0px;
+}
+
+footer a {
+    color: var(--gipshvid);
+}
+
+footer a:hover {
+    opacity: 90%;
+    text-decoration: underline;
+}
+
+.kort {
+    color: var(--gipshvid);
+    margin-top: 20px;
+}
+
+.fa-brands {
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 10px;
+    color: var(--gipshvid);
+    margin-bottom: 20px;
+  }
+  
+  .fa-brands:hover {
+      opacity: 0.8;
+  }
+
+/*Top billede*/
+
+.topBillede {
+    height: 400px;
+    position: fixed;
+    top: 100px;
+}
+
+/*Forsiden*/
+
+#tagline {
+    position: fixed;
+    left: 43%;
+    transform: translate(-43%, -43%);
+}
+
+#overskrift {
+    font-size: 30px;
+    margin-left: 22%;
+}
+
+#mainIndex {
+    height: 32000px;
+}
+
+#mainProdukter {
+    height: 4225px;
+}
+
+#sectionScrollOne, #sectionScrolltwo, #sectionScrollThree, #sectionScrollFour, #sectionScrollFive, #sectionScrollSix, #sectionScrollSeven, #sectionScrollEight, #overskrift, #haanvaeketScrollOne, #haanvaeketScrollTwo, #haanvaeketScrollThree, #haanvaeketScrollFour, #haanvaeketScrollFive, #haanvaeketScrollSix, #haanvaeketScrollSeven, #haanvaeketScrollEight, #formKontakt, #KontaktScrollone{
+    position: fixed;
+    width: 300px;
+}
+
+.sectionScroll {
+    text-align: center;
+}
+
+.billedeScroll {
+    width: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#tekstSkiftNine {
+    margin-top: 15px;
+}
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers, .container {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 6px 22px 3px 22px;
+  color: var(--havetsblå);
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 60px;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+    right: 0;
+  }
+
+.Back {
+    left: 0;
+  }
+  
+  /*when the user hovers,add a black background with some little opacity */
+  .Back:hover, .forward:hover {
+    background-color: var(--naturgrøn);
+    color: var(--gipshvid);
+  }
+  
+  /* Caption Info */
+  .Info {
+    color: var(--midnatsort);
+    font-size: 16px;
+    margin: -10px 0px -28px 0px;
+    text-align: center;
+  }
+
+  .pris {
+    color: var(--naturgrøn);
+    text-align: center;
+  }
+  
+  /* The circles or bullets and indicators */
+  .dots {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    background-color: var(--midnatsort);
+    border-radius: 50%;
+     display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.enable {
+  background-color: var(--havetsblå);
+}
+
+.dots:hover {
+    background-color: var(--naturgrøn);
+}
+
+.dot {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+.tilfojKurv {
+    display: block;
+    margin: -15px auto;
+    background-color: var(--havetsblå);
+    border: none;
+    border-radius: 16px;
+    padding: 5px 20px 2px 20px;
+    color: var(--gipshvid);
+    font-family: "adorn-slab-serif", sans-serif;
+}
+
+.tilfojKurv:hover {
+    background-color: var(--naturgrøn);
+}
+
+
+
+#mainHaandvaeket {
+    height: 13350px;
+}
+
+#mainBrugsanvisningen {
+    height: 5000px;
+}
+
+#mainKontakt {
+    height: 6200px;
+}
+
+
+
+
+#set-height {
+    display: block;
+  }
+  #v0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  p font-family helvetica {
+    font-size: 24px;
+  }
+  
+  #mainKontakt form label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .tekstfelt {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: var(--modegrå);
+  }
+
+  #submitKnap {
+    margin-top: 20px;
+  }
+
+  #haanvaeketScrollTwo {
+    
+  }

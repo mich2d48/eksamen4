@@ -1,0 +1,33 @@
+body{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 5px 1fr 1fr 1fr 1fr 1fr 1fr 5px;
+    grid-template-rows: 600px 600px;
+}
+
+aside {
+    grid-column: 3/9;
+    grid-row: 1/1;
+}
+
+
+
+main {
+    grid-column: 3/7;
+    grid-row: ;
+}
+
+.topBillede {
+    grid-column: 1/9;
+    grid-row: 1/2;
+}
+
+#tagline {
+    grid-column: 3/7;
+    grid-row: 1/2;
+}
+
+#opbygning {
+    margin-top: 550px;
+    text-align: center;
+}

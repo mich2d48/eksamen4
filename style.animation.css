@@ -1,0 +1,707 @@
+
+
+/*Tagline*/
+.topBillede {
+    display: inline-block;
+    animation: topbillede 6s;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes topbillede {
+    0%   {top: 60px;}
+    50%  {top: 60px;}
+    100% {top: -500px;}
+  }  
+
+/*Overskrift*/
+#overskrift {
+    display: inline-block;
+    animation: overskrift 5s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes overskrift {
+    0%   {top: 440px;}
+    5%  {top: 440px}
+    10%   {top: 450px;}
+    100% {top: -450px;}
+}
+
+/*Tagline*/
+#tagline {
+    display: inline-block;
+    animation: rotate 1s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes rotate {
+    0%   {top: 560px;}
+    5%  {top: 560px}
+    100% {top: -500px;}
+}
+
+/*forside animation*/
+
+#sectionScrollOne {
+    display: inline-block;
+    animation: ScrollOne 20s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes ScrollOne {
+    0%   {top: 700px;}
+    35%  {top: 150px;}
+    65%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+.tekstSkiftOne {
+    display: block;
+    animation: tekstOne 20s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstOne {
+    0%   {opacity: 0%;}
+    35% {opacity: 0%;}
+    36%  {opacity: 100%}
+    64%  {opacity: 100%}
+    65% {opacity: 0%;}
+    100%    {opacity: 0%;}
+}
+
+#sectionScrolltwo {
+    display: inline-block;
+    animation: ScrollTwo 40s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes ScrollTwo {
+    0%   {top: 700px;}
+    50%  {top: 700px;}
+    63%  {top: 150px;}
+    88%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+.tekstSkiftTwo {
+    display: block;
+    animation: tekstTwo 40s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstTwo {
+    0%   {opacity: 0%;}
+    50%  {opacity: 0%;}
+    63%  {opacity: 0%;}
+    64%  {opacity: 100%;}
+    87%  {opacity: 100%;}
+    88%  {opacity: 0%;}
+    100% {opacity: 0%;}
+}
+
+
+#sectionScrollThree {
+    display: inline-block;
+    animation: ScrollThree 60s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes ScrollThree {
+    0%   {top: 700px;}
+    67%  {top: 700px;}
+    75%  {top: 150px;}
+    92%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+.tekstSkiftThree {
+    display: block;
+    animation: tekstThree 60s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstThree {
+    0%   {opacity: 0%;}
+    67%  {opacity: 0%;}
+    75%  {opacity: 0%;}
+    76%  {opacity: 100%;}
+    91%  {opacity: 100%;}
+    92%  {opacity: 0%;}
+    100% {opacity: 0%;}
+}
+
+#sectionScrollFour {
+    display: inline-block;
+    animation: ScrollFour 80s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes ScrollFour {
+    0%   {top: 700px;}
+    75%  {top: 700px;}
+    81%  {top: 150px;}
+    94%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+.tekstSkiftFour {
+    display: block;
+    animation: tekstFour 80s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstFour {
+    0%   {opacity: 0%;}
+    75%  {opacity: 0%;}
+    81%  {opacity: 0%;}
+    82%  {opacity: 100%;}
+    93%  {opacity: 100%;}
+    94%  {opacity: 0%;}
+    100% {opacity: 0%;}
+}
+
+#sectionScrollFive {
+    display: inline-block;
+    animation: ScrollFive 100s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes ScrollFive {
+    0%   {top: 700px;}
+    80%  {top: 700px;}
+    85%  {top: 150px;}
+    95%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+.tekstSkiftFive {
+    display: block;
+    animation: tekstFive 100s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstFive {
+    0%   {opacity: 0%;}
+    80%  {opacity: 0%;}
+    85%  {opacity: 0%;}
+    86%  {opacity: 100%;}
+    94%  {opacity: 100%;}
+    95%  {opacity: 0%;}
+    100% {opacity: 0%;}
+}
+
+#sectionScrollSix {
+    display: inline-block;
+    animation: ScrollSix 120s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes ScrollSix {
+    0%   {top: 700px;}
+    83%  {top: 700px;}
+    87%  {top: 150px;}
+    96%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+.tekstSkiftSix {
+    display: block;
+    animation: tekstSix 120s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstSix {
+    0%   {opacity: 0%;}
+    83%  {opacity: 0%;}
+    87%  {opacity: 0%;}
+    88%  {opacity: 100%;}
+    95%  {opacity: 100%;}
+    96%  {opacity: 0%;}
+    100% {opacity: 0%;}
+}
+
+#sectionScrollSeven {
+    display: inline-block;
+    animation: ScrollSeven 140s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes ScrollSeven {
+    0%   {top: 700px;}
+    86%  {top: 700px;}
+    90%  {top: 150px;}
+    96%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+.tekstSkiftSeven {
+    display: block;
+    animation: tekstSeven 140s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstSeven {
+    0%   {opacity: 0%;}
+    86%  {opacity: 0%;}
+    90%  {opacity: 0%;}
+    91%  {opacity: 100%;}
+    95%  {opacity: 100%;}
+    96%  {opacity: 0%;}
+    100% {opacity: 0%;}
+}
+
+#sectionScrollEight {
+    display: inline-block;
+    animation: ScrollEight 160s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes ScrollEight {
+    0%   {top: 700px;}
+    88%  {top: 700px;}
+    91%  {top: 150px;}
+    97%  {top: 150px;}
+    100% {top: -50px;}
+}
+
+.tekstSkiftEight {
+    display: block;
+    animation: tekstEight 160s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstEight {
+    0%   {opacity: 0%;}
+    88%  {opacity: 0%;}
+    91%  {opacity: 0%;}
+    92%  {opacity: 100%;}
+    96%  {opacity: 100%;}
+    97%  {opacity: 100%;}
+    100% {opacity: 100%;}
+}
+
+#tekstSkiftNine {
+    display: block;
+    animation: tekstNine 170s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes tekstNine {
+    0%   {opacity: 0%;}
+    88%  {opacity: 0%;}
+    91%  {opacity: 0%;}
+    94%  {opacity: 0%;}
+    96%  {opacity: 0%;}
+    97%  {opacity: 100%;}
+    100% {opacity: 100%;}
+}
+
+#footerForside {
+    display: inline-block;
+    animation: footer1 170s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes footer1 {
+    0%   {top: 700px;}
+    88%  {top: 700px;}
+    91%  {top: 700px;}
+    97%  {top: 340px;}
+    100% {top: 350px;}
+}
+
+#footerProdukt {
+    display: inline-block;
+    animation: footer2 35s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both; 
+}
+
+@keyframes footer2 {
+    0%   {top: 700px;}
+    40%  {top: 700px;}
+    50%  {top: 340px;}    88%  {top: 340px;}
+    100% {top: 350px;}
+}
+
+
+
+
+
+
+#haanvaeketScrollOne {
+    display: inline-block;
+    animation: HScrollOne 20s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollOne {
+    0%   {top: 700px;}
+    35%  {top: 150px;}
+    65%  {top: -200px;}
+    100% {top: -700px;}
+}
+
+
+#haanvaeketScrollTwo {
+    display: inline-block;
+    animation: HScrollTwo 30s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollTwo {
+    0%   {top: 700px;}
+    50%  {top: 700px;}
+    63%  {top: 150px;}
+    88%  {top: 120px;}
+    100% {top: -300px;}
+}
+
+
+#haanvaeketScrollThree {
+    display: inline-block;
+    animation: HScrollThree 35s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollThree {
+    0%   {top: 700px;}
+    67%  {top: 700px;}
+    75%  {top: 450px;}
+    92%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+
+#haanvaeketScrollFour {
+    display: inline-block;
+    animation: HScrollFour 42s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollFour {
+    0%   {top: 700px;}
+    75%  {top: 700px;}
+    81%  {top: 60px;}
+    94%  {top: -300px;}
+    100% {top: -700px;}
+}
+
+
+#haanvaeketScrollFive {
+    display: inline-block;
+    animation: HScrollFive 49s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollFive {
+    0%   {top: 700px;}
+    80%  {top: 700px;}
+    85%  {top: 150px;}
+    95%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+
+#haanvaeketScrollSix {
+    display: inline-block;
+    animation: HScrollSix 55s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollSix {
+    0%   {top: 700px;}
+    83%  {top: 700px;}
+    87%  {top: 300px;}
+    96%  {top: 150px;}
+    100% {top: -300px;}
+}
+
+
+#haanvaeketScrollSeven {
+    display: inline-block;
+    animation: HScrollSeven 59s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollSeven {
+    0%   {top: 700px;}
+    86%  {top: 700px;}
+    90%  {top: 300px;}
+    96%  {top: -250px;}
+    100% {top: -700px;}
+}
+
+
+#haanvaeketScrollEight {
+    display: inline-block;
+    animation: HScrollEight 65s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollEight {
+    0%   {top: 700px;}
+    88%  {top: 700px;}
+    91%  {top: 150px;}
+    97%  {top: 150px;}
+    100% {top: -50px;}
+}
+
+#footerHaandvaeket {
+    display: inline-block;
+    animation: HScrollFooter 72s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes HScrollFooter {
+    0%   {top: 700px;}
+    88%  {top: 700px;}
+    91%  {top: 340px;}
+    100% {top: 350px;}
+}
+
+#footerBrugsanvisningen {
+    display: inline-block;
+    animation: BScrollFooter 5s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both; 
+}
+
+@keyframes BScrollFooter {
+    0%   {top: 700px;}
+    88%  {top: 700px;}
+    91%  {top: 340px;}
+    100% {top: 350px;}
+}
+
+#footerBrugsanvisning  {
+    display: inline-block;
+    animation: BrScrollFooter 1s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both; 
+}
+
+@keyframes BrScrollFooter {
+    0%   {top: 700px;}
+    88%  {top: 700px;}
+    91%  {top: 340px;}
+    100% {top: 350px;}
+}
+
+#footerKontakt {
+    display: inline-block;
+    animation: KScrollFooter 30s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both; 
+}
+
+@keyframes KScrollFooter {
+    0%   {top: 700px;}
+    88%  {top: 700px;}
+    91%  {top: 340px;}
+    100% {top: 350px;}
+}
+
+#formKontakt {
+    display: inline-block;
+    animation: FScrollOne 20s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes FScrollOne {
+    0%   {top: 700px;}
+    35%  {top: 130px;}
+    65%  {top: 80px;}
+    100% {top: -420px;}
+}
+
+#KontaktScrollone {
+    display: inline-block;
+    animation: KScrollOne 30s linear infinite;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;  
+}
+
+@keyframes KScrollOne {
+    0%   {top: 700px;}
+    50%  {top: 700px;}
+    63%  {top: 160px;}
+    88%  {top: 150px;}
+    100% {top: -300px;}
+}
