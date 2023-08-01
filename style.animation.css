@@ -1,6 +1,6 @@
 
 #topbillede2 {
-    animation: topbillede2 6s;
+    animation: topbillede2 5s;
     animation-iteration-count: infinite;
 }
 
@@ -12,7 +12,7 @@
   } 
 
   #topbillede1 {
-    animation: top1 6s;
+    animation: top1 5s;
     animation-iteration-count: infinite;
 
 }
@@ -28,7 +28,7 @@
 /*Overskrift*/
 #overskrift {
     display: inline-block;
-    animation: overskrift 30s linear infinite;
+    animation: overskrift 1s linear infinite;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -47,7 +47,7 @@
 /*Tagline*/
 #tagline {
     display: inline-block;
-    animation: rotate 25s linear infinite;
+    animation: rotate 1s linear infinite;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -66,7 +66,7 @@
 
 #sectionScrollOne {
     display: inline-block;
-    animation: ScrollOne 95s linear infinite;
+    animation: ScrollOne 3s linear infinite;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -77,14 +77,14 @@
 
 @keyframes ScrollOne {
     0%   {top: 2000px;}
-    35%  {top: 350px;}
+    35%  {top: 300px;}
     65%  {top: 250px;}
     100% {top: -300px;}
 }
 
 .tekstSkiftOne {
     display: block;
-    animation: tekstOne 90s linear infinite;
+    animation: tekstOne 3s linear infinite;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -95,16 +95,16 @@
 
 @keyframes tekstOne {
     0%   {opacity: 0%;}
-    37% {opacity: 0%;}
-    39%  {opacity: 100%}
-    43%  {opacity: 100%}
-    45% {opacity: 0%;}
+    35% {opacity: 0%;}
+    36%  {opacity: 100%}
+    64%  {opacity: 100%}
+    65% {opacity: 0%;}
     100%    {opacity: 0%;}
 }
 
 #opbygning {
     display: inline-block;
-    animation: op 30s linear infinite;
+    animation: op 2s linear infinite;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -122,7 +122,7 @@
 
 #footerProdukt {
     display: inline-block;
-    animation: footer2 140s linear infinite;
+    animation: footer2 5s linear infinite;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -135,14 +135,14 @@
     0%   {top: 1000px; opacity: 0%;}
     39%  {opacity: 0%;}
     40%  {top: 1000px; opacity: 100%;}
-    55%  {top: 700px;}    
-    88%  {top: 710px;}
-    100% {top: 700px;}
+    55%  {top: 400px;}    
+    88%  {top: 405px;}
+    100% {top: 400px;}
 }
 
 #footerBrugsanvisning  {
     display: inline-block;
-    animation: BrScrollFooter 50s linear infinite;
+    animation: BrScrollFooter 6s linear infinite;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -152,9 +152,11 @@
 }
 
 @keyframes BrScrollFooter {
-    0%   {top: 1000px;}
-    88%  {top: 700px;}
-    91%  {top: 710px;}
-    100% {top: 700px;}
+    0%   {top: 1000px; opacity: 0%;}
+    39%  {opacity: 0%;}
+    40%  {top: 1000px; opacity: 100%;}
+    55%  {top: 400px;}    
+    88%  {top: 405px;}
+    100% {top: 400px;}
 }
 
