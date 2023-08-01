@@ -15,18 +15,9 @@
 <body>
     <header>
         <div id="mobil-navigation">
-            <a href="javascript:void(0);" onclick="burgerbarFunktion()"><img src="./Identitet/hamburgerbar.png" id="nav-bar" alt="menu navigationsbar"></a>
-            <a href="./index.html"><img src="./Identitet/DecoWallLogo.png" id="logo-header" alt="DecoWall logo og genvej til forside"></a>
+            <a href="./index.html"><img src="./Identitet/tileLogo.svg" id="logo-header" alt="DecoWall logo og genvej til forside"></a>
             <a href="javascript:void(0);" onclick="kurvFunktion()"><img src="./Identitet/kurv.png" id="kurv-ikon" alt="kurv, se de valgte produkter her"></a>
         </div>
-        <div class="links" id="dropdown-burgerbar">
-            <ul>
-                <li><a href="./produkter.html">Produkter</a></li>
-                <li><a href="./haanvaeket.html">Håndværket</a></li>
-                <li><a href="./brugsanvisning.html">Brugsanvisningen</a></li>
-                <li><a href="./kontaktOs.html">Kontakt os</a></li>
-            </ul>
-        </div>  
     </header>
 
     <aside id="kurv">
@@ -69,10 +60,11 @@
         <h2>gennemført</h2>
     </aside>
    
-
-    <img src="./Billeder/dummie.jpg" alt="" class="topBillede">
-    <h1 id="overskrift">Vores produkter</h1>
-    <h2 id="tagline">Vær' på ferie i dit hjem</h2>
+  
+    <img src="./Billeder/mobil/Coverbilleder/farvevariationerMobil.jpg" alt="Billede af murstensvæg af gips med farvevariationer" class="topBillede" id="topbillede1">
+    <img src="./Billeder/mobil/Coverbilleder/variationsvægGipsMobil.jpg" alt="Billede af murstensvæg af gips med farvevariationer" class="topBillede" id="topbillede2">
+    <h1 id="overskrift">Kollektioner</h1>
+    <h2 id="tagline">Nyt liv til hjemmet!</h2>
 
     <main id="mainProdukter">
         <section id="sectionScrollOne" class="sectionScroll">
@@ -81,22 +73,22 @@
 
                 <!-- Full images with numbers and message Info -->
                 <div class="Containers">
-                    <img src="./Billeder/dummie.jpg" class="billedeScroll">
-                    <h3 class="Info">Modevæg 1</h3>
+                    <img src="./Billeder/mobil/Kollektion/grå.jpg" alt="Vores kollektion Nightsky star" class="billedeScroll">
+                    <h3 class="Info">Nightsky star</h3>
                     <p class="pris">995 kr.</p>
                     <input type="button" value="Tilføj til kurv" onclick="tilKurv()" class="tilfojKurv">
                 </div>
           
                 <div class="Containers">
-                    <img src="./Billeder/dummie.jpg" class="billedeScroll">
-                    <h3 class="Info">Modevæg 2</h3>
+                    <img src="./Billeder/mobil/Kollektion/hvid.jpg" alt="" class="billedeScroll">
+                    <h3 class="Info">Splited perfection</h3>
                     <p class="pris">995 kr.</p>
                     <input type="button" value="Tilføj til kurv" onclick="tilKurv()" class="tilfojKurv">
                 </div>
           
                 <div class="Containers">
-                    <img src="./Billeder/dummie.jpg" class="billedeScroll">
-                    <h3 class="Info">Modevæg 3</h3>
+                    <img src="./Billeder/mobil/Kollektion/småhvid.jpg" alt="Vores kollektion Rising river" class="billedeScroll">
+                    <h3 class="Info">Rising river</h3>
                     <p class="pris">995 kr.</p>
                     <input type="button" value="Tilføj til kurv" onclick="tilKurv()" class="tilfojKurv">
                 </div>
@@ -113,7 +105,7 @@
                 <span class="dots" onclick="currentSlide(3)"></span>
             </div>  
         </section>
-
+    </main>
 
     <footer id="footerProdukt">
         <i class="fa-brands fa-tiktok"></i>
