@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="nofollow">
     <meta name="googlebot" content="noindex">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./style.grid.css" type="text/css" media="all">
     <link rel="stylesheet" href="./style.animation.css" type="text/css" media="all">
     <link rel="shortcut icon" href="./Identitet/DecoWallIllustration.png">
     <link rel="stylesheet" href="https://use.typekit.net/jst2apw.css">
-    <meta name="description" content="Velkommen til den oficielle webshop for DecoWall's produkter. Her kan du se vores politikker så som cookie- og privat. Derudover kan du finde vores kontaktoplysninger og sociale medier.">
-    <meta name="keywords" content="politikker, cookie, privat">
-    <title>Det med småt | DecoWalll</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta name="author" content="Michala Pedersen">
 </head>
 <body>
@@ -52,8 +52,6 @@
             <div>count</div>
             <p>4500 kr.</p>
             <p alt:"slet vare" class="slet">&#10005;</p>
-            
-            
         </div>
     </aside>
     <aside id="levering">
@@ -66,17 +64,54 @@
         <h2>gennemført</h2>
     </aside>
    
-
+  
     <img src="./Billeder/mobil/Coverbilleder/farvevariationerMobil.jpg" alt="Billede af murstensvæg af gips med farvevariationer" class="topBillede" id="topbillede1">
     <img src="./Billeder/mobil/Coverbilleder/variationsvægGipsMobil.jpg" alt="Billede af murstensvæg af gips med farvevariationer" class="topBillede" id="topbillede2">
-    <h1 id="overskrift">Det med småt</h1>
+    <h1 id="overskrift">Kollektioner</h1>
     <h2 id="tagline">Nyt liv til hjemmet!</h2>
 
-    <main id="mainDetmedsmaat">
-        <p id="opbygning">Siden er under opbygning</p>
+    <main id="mainProdukter">
+        <section id="sectionScrollOne" class="sectionScroll">
+            <h3 class="tekstSkiftOne">Produkterne</h3>
+            <div class="slideshow-container fade">
+
+                <!-- Full images with numbers and message Info -->
+                <div class="Containers">
+                    <img src="./Billeder/mobil/Kollektion/grå.jpg" alt="Vores kollektion Nightsky star" class="billedeScroll">
+                    <h3 class="Info">Nightsky star</h3>
+                    <p class="pris">995 kr.</p>
+                    <input type="button" value="Tilføj til kurv" onclick="tilKurv()" class="tilfojKurv">
+                </div>
+          
+                <div class="Containers">
+                    <img src="./Billeder/mobil/Kollektion/hvid.jpg" alt="" class="billedeScroll">
+                    <h3 class="Info">Splited perfection</h3>
+                    <p class="pris">995 kr.</p>
+                    <input type="button" value="Tilføj til kurv" onclick="tilKurv()" class="tilfojKurv">
+                </div>
+          
+                <div class="Containers">
+                    <img src="./Billeder/mobil/Kollektion/småhvid.jpg" alt="Vores kollektion Rising river" class="billedeScroll">
+                    <h3 class="Info">Rising river</h3>
+                    <p class="pris">995 kr.</p>
+                    <input type="button" value="Tilføj til kurv" onclick="tilKurv()" class="tilfojKurv">
+                </div>
+          
+                <!-- Back and forward buttons -->
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        
+            <!-- The circles/dots -->
+            <div class="dot">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+            </div>  
+        </section>
     </main>
 
-    <footer id="footerBrugsanvisning">
+    <footer id="footerProdukt">
         <i class="fa-brands fa-tiktok"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-pinterest-p"></i>

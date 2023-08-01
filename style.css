@@ -17,11 +17,20 @@ body {
     background-color: var(--gipshvid);
 }
 
+h1 {
+    font-size: 50px;
+    color: var(--gipshvid);
+}
+
 h2 {
     text-align: center;
     margin-top: -20px;
     font-style: oblique;
     font-weight: 400;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 a {
@@ -136,7 +145,7 @@ footer {
 
 footer p {
     color: var(--gipshvid);
-    margin: -8px 0px;
+    margin: 8px 0px;
 }
 
 footer a {
@@ -188,13 +197,17 @@ footer a:hover {
     height: 4225px;
 }
 
+#mainDetmedsmaat {
+    height: 2000px;
+}
+
 
 .sectionScroll {
     text-align: center;
 }
 
 .billedeScroll {
-    width: 160px;
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -258,13 +271,14 @@ footer a:hover {
   .Info {
     color: var(--midnatsort);
     font-size: 16px;
-    margin: -10px 0px -28px 0px;
+    margin: -10px 0px -10px 0px;
     text-align: center;
   }
 
   .pris {
     color: var(--naturgrøn);
     text-align: center;
+    padding-bottom: 6px;
   }
   
   /* The circles or bullets and indicators */
@@ -327,4 +341,29 @@ footer a:hover {
 
   #submitKnap {
     margin-top: 20px;
+  }
+
+  #opbygning {
+    margin-top: 550px;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+@media (max-width: 480px) {
+    .text {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .text {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .text {
+      font-size: 16px;
+    }
   }
