@@ -34,6 +34,17 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    display: inline-block;
+    margin-right: 2%;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+h4:hover {
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
     color: var(--midnatsort);
@@ -391,6 +402,18 @@ footer a:hover {
     width: fit-content;
     margin: auto;
     padding: 0px 10px 15px 10px;
+  }
+
+  #boksEt {
+    display: block;
+  } 
+  
+  #boksTo, #boksTre {
+    display: none;
+  }
+
+  #info {
+    text-decoration: underline;
   }
 
 @media (max-width: 480px) {

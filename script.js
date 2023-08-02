@@ -65,10 +65,10 @@ function SlideShow(n) {
 
 
 
+
+
+
+
 function tilKurv() {
   alert("Produktet ligger nu i kurven");
-}
-
-function sendBesked() {
-  alert("Besked sendt")
 }
