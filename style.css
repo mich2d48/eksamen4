@@ -31,11 +31,13 @@ h2 {
 
 h3 {
     font-size: 30px;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: var(--midnatsort);
+    cursor: pointer;
 }
 
 /*Header*/
@@ -249,6 +251,7 @@ footer a:hover {
   transition: 0.4s ease;
   border-radius: 60px;
   user-select: none;
+  cursor: pointer;
 }
 
 /* Place the "forward button" to the right */
@@ -326,16 +329,17 @@ footer a:hover {
 .tilfojKurv {
     display: block;
     margin: -15px auto;
-    background-color: var(--naturgrøn);
+    background-color: var(--solopgangsrød);
     border: none;
     border-radius: 16px;
     padding: 5px 20px 2px 20px;
     color: var(--gipshvid);
     font-family: "adorn-slab-serif", sans-serif;
+    cursor: pointer;
 }
 
 .tilfojKurv:hover {
-    background-color: var(--solopgangsrød);
+    background-color: var(--naturgrøn);
 }
 
   #submitKnap {
@@ -354,7 +358,40 @@ footer a:hover {
     width: 120px;
   }
 
+  .wrapper {
+    margin: auto;
+    border: 2px solid var(--midnatsort);
+    border-radius: 14px;
+    width: 104px;
+    height: 33px;
+    padding: 0px 8px;
+  }
 
+  .wrapper span {
+    font-size: 25px;
+    margin: 0px 4px;
+    cursor: pointer;
+  }
+
+  .num {
+    border-left: 1px solid #d9d8d7;
+    border-right: 1px solid #d9d8d7;
+    padding: 0px 2px;
+  }
+
+  .mons {
+    display: inline-block;
+  }
+
+  #kr {
+    display: inline-block;
+  }
+
+  #wrapperTwo {
+    width: fit-content;
+    margin: auto;
+    padding: 0px 10px 15px 10px;
+  }
 
 @media (max-width: 480px) {
     .text {
