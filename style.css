@@ -221,7 +221,6 @@ footer a:hover {
 
 
 
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -349,6 +348,13 @@ footer a:hover {
     font-size: 35px;
 }
 
+  #nummertaeller {
+    border-style: solid;
+    border-radius: 1px;
+    width: 120px;
+  }
+
+
 
 @media (max-width: 480px) {
     .text {
@@ -367,3 +373,4 @@ footer a:hover {
       font-size: 16px;
     }
   }
+

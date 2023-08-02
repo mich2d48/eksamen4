@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="nofollow">
+    <meta name="googlebot" content="noindex">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.grid.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./style.animation.css" type="text/css" media="all">
+    <link rel="shortcut icon" href="./Identitet/favicon.svg">
+    <link rel="stylesheet" href="https://use.typekit.net/jst2apw.css">
+    <meta name="description" content="Velkommen til den oficielle webshop for DecoWall's produkter. Her kan du se vores store udvalg af gipskunst til væggen. Derudover kan du finde vores kontaktoplysninger og sociale medier.">
+    <meta name="keywords" content="vægkunst, murstensvæg, væg, renovering, boligindretning, kunst, stue">
+    <title>Kollektioner | DecoWalll</title>
+    <meta name="author" content="Michala Pedersen">
+</head>
+<body>
+    <header>
+        <div id="mobil-navigation">
+            <a href="./index.html"><img src="./Identitet/tileLogo.svg" id="logo-header" alt="DecoWall logo og genvej til forside"></a>
+            <a href="javascript:void(0);" onclick="kurvFunktion()"><img src="./Identitet/kurv.png" id="kurv-ikon" alt="kurv, se de valgte produkter her"></a>
+        </div>
+    </header>
+
+    <aside id="kurv">
+        <ul id="nummer-menu">
+            <li><a href="" id="nummer-menu-on">1</a></li>
+            <li><a href="" class="nummer-menu-off">2</a></li>
+            <li><a href="" class="nummer-menu-off">3</a></li>
+        </ul>
+        <p id="gratis-levering">Køb for over 5000 kr. for gratis levering</p>
+        <h2>Kurv</h2>
+        <div class="vare">
+            <img src="./Billeder/mobil/Kollektion/småhvid.jpg" alt="Varebillede" class="varebillede"> 
+            <h3>Modevæg</h3> 
+            <div>count</div>
+            <p>4500 kr.</p>
+            <p alt:"slet vare" class="slet">&#10005;</p>
+        </div>
+        <div class="vare">
+            <img src="./Billeder/mobil/Kollektion/grå.jpg" alt="Varebillede" class="varebillede">
+            <h3>Modevæg</h3> 
+            <div>count</div>
+            <p>4500 kr.</p>
+            <p alt:"slet vare" class="slet">&#10005;</p>
+        </div>
+        <div class="vare">
+            <img src="./Billeder/mobil/Kollektion/hvid.jpg" alt="Varebillede" class="varebillede">
+            <h3>Modevæg</h3> 
+            <div>count</div>
+            <p>4500 kr.</p>
+            <p alt:"slet vare" class="slet">&#10005;</p>
+        </div>
+    </aside>
+    <aside id="levering">
+        <h2>levering</h2>
+    </aside>
+    <aside id="betaling">
+        <h2>betaling</h2>
+    </aside>
+    <aside id="gennemført">
+        <h2>gennemført</h2>
+    </aside>
+   
+  
+
+    <main id="mainProdukter">
+        <section>
+            <h3 class="tekstSkiftOne">Kollektionerne</h3>
+            <div class="slideshow-container fade">
+
+                <!-- Full images with numbers and message Info -->
+                <div class="Containers">
+                    <img src="./Billeder/mobil/Kollektion/grå.jpg" alt="Vores kollektion Nightsky star" class="billedeScroll">
+                </div>
+          
+                <div class="Containers">
+                    <img src="./Billeder/mobil/Kollektion/hvid.jpg" alt="" class="billedeScroll">
+                </div>
+          
+                <div class="Containers">
+                    <img src="./Billeder/mobil/Kollektion/småhvid.jpg" alt="Vores kollektion Rising river" class="billedeScroll">
+                </div>
+          
+                <!-- Back and forward buttons -->
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        
+            <!-- The circles/dots -->
+            <div class="dot">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+            </div>  
+        </section>
+        <div>
+            <h3>Produkt</h3>
+            <div class="wrapper">
+                <span class="minus">-</span>
+                <span class="num">01</span>
+                <span class="plus">+</span>
+            </div>
+            <span class="mons">995,00</span>
+            <p>kr.</p>
+            <input type="button" value="Tilføj til kurv" onclick="tilKurv()" class="tilfojKurv">
+        </div>
+        <section>
+            <div>
+                <h4>Beskrivelse</h4>
+                <p>Alle vores produkter er specielt es produkter er specielt designet efter dine specifikke ønskerAlle vores produkter er specielt designet efter dine specifikke ønskerAlle vores produkter er specielt designet efter dine specifikke ønskerAlle vores produkter er specielt designet efter dine specifikke ønskerAlle vores produkter er specielt designet efter dine specifikke ønske.</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer id="footerProdukt">
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <p>TLF: +45 12341234</p>
+        <p>E-mail: Kontakt@decowall.dk</p>
+        <p>Chr. nr.: 01010101</p>
+        <p><a href="./detMedSmaat.html">Det med småt</a></p>
+        <i class="fa-solid fa-credit-card kort"></i>
+        <i class="fa-regular fa-credit-card kort"></i>
+        <i class="fa-solid fa-credit-card kort"></i>
+        <i class="fa-regular fa-credit-card kort"></i>
+        <i class="fa-solid fa-credit-card kort"></i>
+        <i class="fa-regular fa-credit-card kort"></i>
+        <i class="fa-solid fa-credit-card kort"></i>
+        <i class="fa-regular fa-credit-card kort"></i>
+        <i class="fa-solid fa-credit-card kort"></i>
+        <i class="fa-regular fa-credit-card kort"></i>
+        <i class="fa-solid fa-credit-card kort"></i>
+        <i class="fa-regular fa-credit-card kort"></i>
+    </footer>
+
+
+<script src="script.js"></script>
+<script src="test.js"></script>
+<script src="https://kit.fontawesome.com/c72921f1cf.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+  
+  
+
+  
