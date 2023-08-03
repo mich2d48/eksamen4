@@ -1,3 +1,5 @@
+/*Stylingen*/
+/*farvepalletten*/
 :root {
     --midnatsort: #260401; 
     --gipshvid: #ffffff;
@@ -6,6 +8,8 @@
     --solopgangsrød: #a63f03;
 }
 
+/*styling for alle siderne*/
+/*body*/
 body {
     Margin: 0;
     padding: 0;
@@ -17,6 +21,7 @@ body {
     background-color: var(--gipshvid);
 }
 
+/*overskrifter, link og tekst*/
 h1 {
     font-size: 50px;
     color: var(--gipshvid);
@@ -52,7 +57,6 @@ a {
 }
 
 /*Header*/
-
 header {
     display: flex;
     justify-content: center;
@@ -65,12 +69,13 @@ header {
     background-color: var(--gipshvid);
 }
 
-
+/*logo*/
 #logo-header {
     margin-top: 12px;
     width: 200px; 
 }
 
+/*kurvikon*/
 #kurv-ikon {
     width: 40px;
     position: absolute;
@@ -79,6 +84,9 @@ header {
 }
 
 
+
+/*Indkøbskurv aside*/
+/*Kurvmodulet*/
 #kurv {
     top: 0px;
     left: 0px;
@@ -98,7 +106,6 @@ header {
     color: var(--modegrå);
 }
 
-
 #kurv li {
     list-style: none;
     display: inline-table;
@@ -112,41 +119,27 @@ header {
     margin-top: 10px;
 }
 
-/*Indkøbskurv aside*/
-
 aside {
     background-color: #4a7074;
 }
 
-.vare {
-    border: solid 2px #260401;
-    padding: 5px;
-}
-
-.varebillede {
-    width: 100px;
-}
-
+/*leveringsmodulet*/
 #levering {
     display: none;
 }
 
+/*betalingsmodulet*/
 #betaling {
     display: none;
 }
 
+/*bekræftelsesmodulet*/
 #gennemført {
     display: none;
 }
 
-#gratis-levering {
-    text-align: center;
-    margin-top: -45px;
-    font-size: 12px;
-}
 
 /*FOOTER*/
-
 footer {
     position: fixed;
     bottom: -200px;
@@ -171,7 +164,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
+/*kortikon i footer*/
 .kort {
     color: var(--gipshvid);
     margin-top: 20px;
@@ -189,32 +182,39 @@ footer a:hover {
       opacity: 0.8;
   }
 
-/*Top billede*/
 
+/*Top billede - coverbillede*/
 .topBillede {
     top: 100px;
     width: 100%;
 }
 
+/*headerbillede desktop*/
+.opBillede {
+    display: none;
+    width: 100%;
+    margin-top: -200px;
+  }
 
-/*Toppen*/
 
+/*tagline, overskrift, og scroll*/
 #tagline, #overskrift, #sectionScrollOne {
     position: fixed;
     left: 43%;
     transform: translate(-43%, -43%);
 }
 
-
+/*Main højde - for scrollfunktionens skyld*/
 #mainProdukter, #mainDetmedsmaat, #mainProdukt {
     height: 2700px;
 }
 
-
+/*index første section*/
 .sectionScroll {
     text-align: center;
 }
 
+/*karocel billeder*/
 .billedeScroll {
     width: 75%;
     display: block;
@@ -223,28 +223,29 @@ footer a:hover {
     margin-bottom: 20px;
 }
 
+/*karocel overskrift h3*/
 #tekstSkiftNine {
     margin-top: 15px;
 }
 
 
 
-
+/*karocel*/
 * {box-sizing:border-box}
 
-/* Slideshow container */
+/*container*/
 .slideshow-container {
   max-width: 600px;
   position: relative;
   margin: auto;
 }
 
-/* Make the images invisible by default */
+/*fjern midlertidigt*/
 .Containers, .container {
   display: none;
 }
 
-/* forward & Back buttons */
+/*navigations pile*/
 .Back, .forward {
   cursor: pointer;
   position: absolute;
@@ -261,22 +262,23 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* Place the "forward button" to the right */
+/*højrepil*/
 .forward {
     right: 0;
   }
 
+/*venstre pil*/
 .Back {
     left: 0;
   }
   
-  /*when the user hovers,add a black background with some little opacity */
+  /*hoverfunktion til pilene*/
   .Back:hover, .forward:hover {
     background-color: var(--naturgrøn);
     color: var(--gipshvid);
   }
   
-  /* Caption Info */
+  /*title - produktnavn*/
   .Info {
     color: var(--midnatsort);
     font-size: 16px;
@@ -284,13 +286,14 @@ footer a:hover {
     text-align: center;
   }
 
+  /*produktpris*/
   .pris {
     color: var(--naturgrøn);
     text-align: center;
     padding-bottom: 6px;
   }
   
-  /* The circles or bullets and indicators */
+  /*cirkler der fortæller hvor langt du er i karocellen*/
   .dots {
     cursor: pointer;
     height: 10px;
@@ -315,7 +318,7 @@ footer a:hover {
     margin: 20px 0px;
 }
 
-/* Faint animation */
+/*animation der faider billederne når de scroller*/
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.4s;
@@ -333,6 +336,7 @@ footer a:hover {
   to {opacity: 2}
 }
 
+/*Knap design*/
 .tilfojKurv {
     display: block;
     margin: -15px auto;
@@ -349,23 +353,18 @@ footer a:hover {
     background-color: var(--naturgrøn);
 }
 
-  #submitKnap {
+#submitKnap {
     margin-top: 20px;
   }
 
-  #opbygning {
-    margin-top: 550px;
-    text-align: center;
-    font-size: 35px;
-}
-
-  #nummertaeller {
+/*produktside antaltæller*/
+#nummertaeller {
     border-style: solid;
     border-radius: 1px;
     width: 120px;
   }
 
-  .wrapper {
+.wrapper {
     margin: auto;
     border: 2px solid var(--midnatsort);
     border-radius: 14px;
@@ -374,72 +373,68 @@ footer a:hover {
     padding: 0px 8px;
   }
 
-  .wrapper span {
+.wrapper span {
     font-size: 25px;
     margin: 0px 4px;
     cursor: pointer;
   }
 
-  .num {
+/*antal*/
+.num {
     border-left: 1px solid #d9d8d7;
     border-right: 1px solid #d9d8d7;
     padding: 0px 2px;
   }
 
-  .mons {
+/*beløbet*/
+.mons {
     display: inline-block;
   }
 
-  #kr {
+/*kr.*/
+#kr {
     display: inline-block;
   }
 
-  #wrapperTwo {
+#wrapperTwo {
     width: fit-content;
     margin: auto;
     padding: 0px 10px 15px 10px;
   }
 
-  #boksEt {
+/*produktside - informationsbokse*/
+#boksEt {
     display: block;
   } 
   
-  #boksTo, #boksTre {
+#boksTo, #boksTre {
     display: none;
   }
 
-  #info {
+#info {
     text-decoration: underline;
   }
 
-  .opBillede {
-    display: none;
-    width: 100%;
-    margin-top: -200px;
-  }
 
-@media (max-width: 480px) {
-
-  }
-
-
+/*Desktop specifikationer*/
   @media (min-width: 480px) {
+    /*mobil topbillde usynlig*/
     .topBillede {
         display: none;
     }
 
+    /*desktop topbillede synlig*/
     .opBillede {
         display: inline;
       }
 
+    /*produktside længdejustering*/
     #mainProdukt {
         height: 1500px;
     }
 
+    /*index og det med småt side længdejustering*/
     #mainProdukter, #mainDetmedsmaat {
         height: 3500px;
     }
   }
-
-
-

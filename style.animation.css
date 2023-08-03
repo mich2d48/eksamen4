@@ -1,6 +1,8 @@
 
+/*Animations css*/
+/*topbillede animation*/
 #topbillede2 {
-    animation: topbillede2 5s;
+    animation: topbillede2 6s;
     animation-iteration-count: infinite;
 }
 
@@ -12,7 +14,7 @@
   } 
 
 #topbillede1 {
-    animation: top1 5s;
+    animation: top1 6s;
     animation-iteration-count: infinite;
 
 }
@@ -63,7 +65,6 @@
 }
 
 /*forside animation*/
-
 #sectionScrollOne {
     display: inline-block;
     animation: ScrollOne 3s linear infinite;
@@ -82,6 +83,7 @@
     100% {top: -400px;}
 }
 
+/*tekst synlig/usynlig på karosel*/
 .tekstSkiftOne {
     display: block;
     animation: tekstOne 3s linear infinite;
@@ -102,24 +104,7 @@
     100%    {opacity: 0%;}
 }
 
-#opbygning {
-    display: inline-block;
-    animation: op 2s linear infinite;
-
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-
-    animation-iteration-count: 1;
-    animation-fill-mode: both;  
-}
-
-@keyframes op {
-    0%   {top: 2000px;}
-    35%  {top: 350px;}
-    65%  {top: 250px;}
-    100% {top: 300px;}
-}
-
+/*footer index og Det med småt*/
 #footerIndex {
     display: inline-block;
     animation: footer 5s linear infinite;
@@ -131,7 +116,7 @@
     animation-fill-mode: both; 
 }
 
-
+/*footer produkt*/
 #footerProdukt {
     display: inline-block;
     animation: footer 2s linear infinite;
@@ -149,9 +134,9 @@
     100% {bottom: 0px;}
 }
 
-
+/*Desktop specifikationer*/
 @media (min-width: 480px) {
-
+/*karocel, kortere tid og ændring i keyframe*/
 #sectionScrollOne {
     display: inline-block;
     animation: ScrollOne 12s linear infinite;
@@ -170,6 +155,7 @@
     100% {bottom: 20px;}
 }
 
+/*karosel tekst - kortere tid*/
 .tekstSkiftOne {
     display: block;
     animation: tekstOne 12s linear infinite;
@@ -190,6 +176,8 @@
     100%    {opacity: 0%;}
 }
 
+/*footere*/
+/*kortere tid*/
 #footerIndex {
     display: inline-block;
     animation: footer 17s linear infinite;
@@ -201,7 +189,7 @@
     animation-fill-mode: both; 
 }
 
-
+/*kortere tid*/
 #footerProdukt {
     display: inline-block;
     animation: footer 3s linear infinite;
@@ -212,6 +200,4 @@
     animation-iteration-count: 1;
     animation-fill-mode: both; 
 }
-
-
 }

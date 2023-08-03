@@ -1,3 +1,6 @@
+
+/*Gridopbygning*/
+/*Skillettet til alle siderne*/
 body{
     margin-top: 60px;
     display: grid;
@@ -5,25 +8,31 @@ body{
     grid-template-rows: 600px 600px;
 }
 
+/*kurvmodulet*/
 aside {
     grid-column: 3/9;
     grid-row: 1/1;
 }
 
+/*main*/
 main {
     grid-column: 3/7;
 }
 
+/*Coverbilleder*/
+/*Mobilversion - index og Det med småt*/
 .topBillede {
     grid-column: 1/9;
     grid-row: 1/2;
 }
 
+/*Desktopversion - index og Det med småt*/
 .opBillede {
     grid-column: 1/6;
     grid-row: 1/2;
 }
 
+/*Tagline*/
 #tagline {
     grid-column: 3/7;
     grid-row: 1/2;

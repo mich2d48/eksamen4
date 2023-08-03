@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--nofollow og noindex er sat på for at, undgå at folk bliver disponeret for siden og beskytte DecoWall under eksamensperioden-->
     <meta name="robots" content="nofollow">
     <meta name="googlebot" content="noindex">
     <link rel="stylesheet" href="style.css">
@@ -19,97 +20,89 @@
 <body>
     <header>
         <div id="mobil-navigation">
+            <!--Logoet på toppen af siden-->
             <a href="./index.html"><img src="./Identitet/tileLogo.svg" id="logo-header" alt="DecoWall logo og genvej til forside"></a>
+            <!--Kurv iconet højre overste hjørne-->
             <a href="javascript:void(0);" onclick="kurvFunktion()"><img src="./Identitet/kurv.png" id="kurv-ikon" alt="kurv, se de valgte produkter her"></a>
         </div>
     </header>
-
+<!--Kurv siderne, kommer frem på kurvikonet er klikket-->
+<!--Første side, inholdet i kurven-->
     <aside id="kurv">
         <ul id="nummer-menu">
             <li><a href="" id="nummer-menu-on">1</a></li>
             <li><a href="" class="nummer-menu-off">2</a></li>
             <li><a href="" class="nummer-menu-off">3</a></li>
         </ul>
-        <p id="gratis-levering">Køb for over 5000 kr. for gratis levering</p>
         <h2>Kurv</h2>
-        <div class="vare">
-            <img src="./Billeder/mobil/Kollektion/småhvid.jpg" alt="Varebillede" class="varebillede"> 
-            <h3>Modevæg</h3> 
-            <div>count</div>
-            <p>4500 kr.</p>
-            <p alt:"slet vare" class="slet">&#10005;</p>
-        </div>
-        <div class="vare">
-            <img src="./Billeder/mobil/Kollektion/grå.jpg" alt="Varebillede" class="varebillede">
-            <h3>Modevæg</h3> 
-            <div>count</div>
-            <p>4500 kr.</p>
-            <p alt:"slet vare" class="slet">&#10005;</p>
-        </div>
-        <div class="vare">
-            <img src="./Billeder/mobil/Kollektion/hvid.jpg" alt="Varebillede" class="varebillede">
-            <h3>Modevæg</h3> 
-            <div>count</div>
-            <p>4500 kr.</p>
-            <p alt:"slet vare" class="slet">&#10005;</p>
-        </div>
     </aside>
+    <!--Anden side, valg af levering-->
     <aside id="levering">
         <h2>levering</h2>
     </aside>
+    <!--tredje side, valg af betaling og betal -->
     <aside id="betaling">
         <h2>betaling</h2>
     </aside>
+    <!--sidste side, bekræftelse på bestilling og bealing-->
     <aside id="gennemført">
         <h2>gennemført</h2>
     </aside>
    
-  
-
+    <!--her starter sidens unikke indhold:-->
     <main id="mainProdukt">
+        <!--section et besstår af: karosel til at fremvise dette specifikke produkt-->
         <section>
             <h3 class="tekstSkiftOne">Kollektionerne</h3>
             <div class="slideshow-container fade">
-
+                <!--Billede 1-->
                 <div class="Containers">
                     <img src="./Billeder/mobil/Kollektion/grå.jpg" alt="Vores kollektion Nightsky star" class="billedeScroll">
                 </div>
-          
+                <!--billede 2-->
                 <div class="Containers">
                     <img src="./Billeder/mobil/Kollektion/hvid.jpg" alt="" class="billedeScroll">
                 </div>
-          
+                <!--billede 3-->
                 <div class="Containers">
                     <img src="./Billeder/mobil/Kollektion/småhvid.jpg" alt="Vores kollektion Rising river" class="billedeScroll">
                 </div>
-          
+                <!--pile til at navigere rundt i karosellen-->
                 <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="forward" onclick="plusSlides(1)">&#10095;</a>
             </div>
-        
+            <!--cirkler der viser hvor i karosellen du befinder dig-->
             <div class="dot">
                 <span class="dots" onclick="currentSlide(1)"></span>
                 <span class="dots" onclick="currentSlide(2)"></span>
                 <span class="dots" onclick="currentSlide(3)"></span>
             </div>  
         </section>
+
+        <!--Section to består af: antal tæller og beløbsudregner-->
         <section>
-            <h3>Produkt</h3>
+            <h3 id="produktnavn">Produkt</h3>
+            <!--antaltæller-->
             <div class="wrapper">
                 <span class="minus">-</span>
                 <span class="num">01</span>
                 <span class="plus">+</span>
             </div>
+            <!--beløbudregner-->
             <div id="wrapperTwo">
                 <span class="mons">995,00</span>
                 <p id="kr">kr.</p>
             </div>
+            <!--knap med alert. klik på den!-->
             <input type="button" value="Tilføj til kurv" onclick="tilKurv()" class="tilfojKurv">
         </section>
+        <!--i section tre kan du klikke dig gennem og læse om produktspecifikationer. boks 1, 2 og 3 vises på skift på man klikker på henholdsvist materialer, info og miljo-->
         <section>
+            <!--overskrift-knapper-valgmuligheder-->
             <h4 onclick="info()" id="info">Produktinfo</h4>
             <h4 onclick="materialer()" id="materialer">Materialer</h4>
             <h4 onclick="miljo()" id="miljo">Miljø</h4>
+            <!--indholdsteksbokse-->
             <div class="boks" id="boksEt">
                 <p>1Alle vores produkter er specielt es produkter er specielt designet efter dine specifikke ønskerAlle vores produkter er specielt designet efter dine specifikke ønskerAlle vores produkter er specielt designet efter dine specifikke ønskerAlle vores produkter er specielt designet efter dine specifikke ønskerAlle vores produkter er specielt designet efter dine specifikke ønske.</p>
             </div>
@@ -123,7 +116,7 @@
     </main>
 
 
-
+     <!--Footer, med kontaktinfo, link til det med småt og kort ikoner-->
     <footer id="footerProdukt">
         <i class="fa-brands fa-tiktok"></i>
         <i class="fa-brands fa-instagram"></i>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--nofollow og noindex er sat på for at, undgå at folk bliver disponeret for siden og beskytte DecoWall under eksamensperioden-->
     <meta name="robots" content="nofollow">
     <meta name="googlebot" content="noindex">
     <link rel="stylesheet" href="style.css">
@@ -19,65 +20,55 @@
 <body>
     <header>
         <div id="mobil-navigation">
+            <!--Logoet på toppen af siden-->
             <a href="./index.html"><img src="./Identitet/tileLogo.svg" id="logo-header" alt="DecoWall logo og genvej til forside"></a>
+            <!--Kurv iconet højre overste hjørne-->
             <a href="javascript:void(0);" onclick="kurvFunktion()"><img src="./Identitet/kurv.png" id="kurv-ikon" alt="kurv, se de valgte produkter her"></a>
         </div>
     </header>
-
+<!--Kurv siderne, kommer frem på kurvikonet er klikket-->
+<!--Første side, inholdet i kurven-->
     <aside id="kurv">
         <ul id="nummer-menu">
             <li><a href="" id="nummer-menu-on">1</a></li>
             <li><a href="" class="nummer-menu-off">2</a></li>
             <li><a href="" class="nummer-menu-off">3</a></li>
         </ul>
-        <p id="gratis-levering">Køb for over 5000 kr. for gratis levering</p>
         <h2>Kurv</h2>
-        <div class="vare">
-            <img src="./Billeder/mobil/Kollektion/småhvid.jpg" alt="Varebillede" class="varebillede"> 
-            <h3>Modevæg</h3> 
-            <div>count</div>
-            <p>4500 kr.</p>
-            <p alt:"slet vare" class="slet">&#10005;</p>
-        </div>
-        <div class="vare">
-            <img src="./Billeder/mobil/Kollektion/grå.jpg" alt="Varebillede" class="varebillede">
-            <h3>Modevæg</h3> 
-            <div>count</div>
-            <p>4500 kr.</p>
-            <p alt:"slet vare" class="slet">&#10005;</p>
-        </div>
-        <div class="vare">
-            <img src="./Billeder/mobil/Kollektion/hvid.jpg" alt="Varebillede" class="varebillede">
-            <h3>Modevæg</h3> 
-            <div>count</div>
-            <p>4500 kr.</p>
-            <p alt:"slet vare" class="slet">&#10005;</p>
-        </div>
     </aside>
+    <!--Anden side, valg af levering-->
     <aside id="levering">
         <h2>levering</h2>
     </aside>
+    <!--tredje side, valg af betaling og betal -->
     <aside id="betaling">
         <h2>betaling</h2>
     </aside>
+    <!--sidste side, bekræftelse på bestilling og bealing-->
     <aside id="gennemført">
         <h2>gennemført</h2>
     </aside>
    
-
+   <!--coverbilleder til mobilverion-->
     <img src="./Billeder/mobil/Coverbilleder/farvevariationerMobil.jpg" alt="Billede af murstensvæg af gips med farvevariationer" class="topBillede" id="topbillede1">
     <img src="./Billeder/mobil/Coverbilleder/variationsvægGipsMobil.jpg" alt="Billede af murstensvæg af gips med farvevariationer" class="topBillede" id="topbillede2">
 
+    <!--coverbilleder til desktopversion-->
     <img src="./Billeder/PC/Coverbilleder/farvevariationer.jpg" alt="Billede af murstensvæg af gips med farvevariationer" class="opBillede" id="topbillede1">
     <img src="./Billeder/PC/Coverbilleder/variationsvægGips.jpg" alt="Billede af murstensvæg af gips med farvevariationer" class="opBillede" id="topbillede2">
 
+    <!--overskrif, animeret på scroll-->
     <h1 id="overskrift">Det med småt</h1>
+
+    <!--tagline, animeret på scroll-->
     <h2 id="tagline">Nyt liv til hjemmet!</h2>
 
+    <!--her starter sidens unikke indhold:-->
     <main id="mainDetmedsmaat">
         <p id="opbygning">Siden er under opbygning</p>
     </main>
 
+     <!--Footer, med kontaktinfo, link til det med småt og kort ikoner-->
     <footer id="footerIndex">
         <i class="fa-brands fa-tiktok"></i>
         <i class="fa-brands fa-instagram"></i>

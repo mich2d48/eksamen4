@@ -1,28 +1,19 @@
 
-
-var x = document.getElementById("dropdown-burgerbar")
-  var y = document.getElementById("kurv")
-
-
-function burgerbarFunktion() {
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block", y.style.display = "none";
-    }
-  }
+//Header - kurven
+var l = document.getElementById("dropdown-burgerbar")
+  var k = document.getElementById("kurv")
 
 
 function kurvFunktion() {
-    if (y.style.display === "block") {
-      y.style.display = "none";
+    if (k.style.display === "block") {
+      k.style.display = "none";
     } else {
-      y.style.display = "block", x.style.display = "none";
+      k.style.display = "block", l.style.display = "none";
     }
   }
 
-// scroll på forsiden https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
-// scroll som en enhed på på siden
+// scroll på siderne https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
+// scroll som en enhed på siden
   window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
   }, false);
@@ -30,22 +21,21 @@ function kurvFunktion() {
 
 
 
-//carocel til produktsiden https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
-//
-
+//carocel til index og produktsiden https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
 var slidePosition = 1;
 SlideShow(slidePosition);
 
-// forward/Back controls
+// navigering frem og tilbage pile
 function plusSlides(n) {
   SlideShow(slidePosition += n);
 }
 
-//  images controls
+//  billederne
 function currentSlide(n) {
   SlideShow(slidePosition = n);
 }
 
+//funktionen for slideshowet
 function SlideShow(n) {
   var i;
   var slides = document.getElementsByClassName("Containers");
@@ -69,6 +59,4 @@ function SlideShow(n) {
 
 
 
-function tilKurv() {
-  alert("Produktet ligger nu i kurven");
-}
+
