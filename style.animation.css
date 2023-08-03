@@ -1,7 +1,7 @@
 
 /*Animations css*/
 /*topbillede animation*/
-#topbillede2 {
+.topbillede2 {
     animation: topbillede2 6s;
     animation-iteration-count: infinite;
 }
@@ -13,7 +13,7 @@
     100% {opacity: 0%}
   } 
 
-#topbillede1 {
+.topbillede1 {
     animation: top1 6s;
     animation-iteration-count: infinite;
 

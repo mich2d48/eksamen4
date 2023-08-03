@@ -339,6 +339,7 @@ footer a:hover {
 /*Knap design*/
 .tilfojKurv {
     display: block;
+    width: fit-content;
     margin: -15px auto;
     background-color: var(--solopgangsrød);
     border: none;
